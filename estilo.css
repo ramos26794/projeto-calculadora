@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Cor do fundo e fonte da nossa página */
+.fundo {
+    background-image: linear-gradient(45deg,black,crimson);
+    height: 100vh; /* Background-image ocupa toda a página */
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* Estilização e posicionamento da calculadora */
+.calculadora {
+    position: absolute; /* Ocupa apenas o espaço da calculadora */
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);/*A div irá voltar menos 50% para o Eixo X e menos 50% para o Eixo Y */
+    border-radius: 15px; /* Arredonda as bordas da calculadora */
+    padding: 15px; /* A distância entre os elementos e a borda */
+}
+
+/* Estilização dos botões da calculadora */
+.botao {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 3px;
+    background-color: rgb(31, 31, 31);
+    border: none;
+    color: white;
+}
+
+/* Quando passa o mouse por cima dos botões a cor do fundo muda para preto */
+.botao:hover {
+    background-color: black;
+}
+
+/* Paragrafo que mostra os resultados da calculadora */
+#resultado {
+    width: 207px;
+    background-color: white;
+    height: 30px;
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+    padding: 5px;
+}
